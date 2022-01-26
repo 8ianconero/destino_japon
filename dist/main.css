@@ -87,3 +87,36 @@ h1, h2, h3, h4 {
 .header-menu__link a:hover {
   text-decoration: underline;
 }
+
+.main {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main__title {
+  color: #BA1200;
+  font-size: 8rem;
+  margin: 0 0 80px;
+}
+.main__subtitle {
+  color: #39393A;
+  font-size: 2.8rem;
+  margin: 0 0 30px;
+}
+.main .input {
+  border: 3px solid #AF5D63;
+  border-radius: 25px;
+  font-size: 1.6rem;
+  font-family: "Karla", sans-serif;
+  height: 50px;
+  padding: 0 20px;
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.5);
+  outline: none;
+}
+.main .input::placeholder {
+  color: #39393A;
+}
