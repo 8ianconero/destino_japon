@@ -1,4 +1,4 @@
-.main{
+.main-search{
     height:300px;
     display: flex;
     flex-direction: column;
@@ -6,19 +6,13 @@
     align-items: center;
     text-align: center;
 
-    &__title{
-        color: $acc-color;
-        font-size: 8rem;
-        margin: 0 0 80px;
-    }
-
-    &__subtitle{
+    .search__title{
         color: $secondary-color-b;
         font-size: 2.8rem;
         margin: 0 0 30px;
     }
 
-    .input{
+    .search__input{
         border: 3px solid $secondary-color-a;
         border-radius: 25px;
         font-size: 1.6rem;
