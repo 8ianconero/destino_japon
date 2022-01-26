@@ -1,0 +1,20 @@
+.notFound{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: calc(100vh - 160px);
+    color: #5afaf5;
+    & h2{
+        font-size: 15rem;
+        font-weight: 500;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    & p{
+        margin: 0;
+        color:#fd8585;
+        font-size: 2.4rem;
+    }
+}
