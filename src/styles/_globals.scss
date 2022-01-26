@@ -1,0 +1,29 @@
+*,  *:before, *:after{
+    box-sizing: border-box;
+  }
+
+  html{
+    font-size: 62.5%;
+}
+body {
+    background: linear-gradient(0deg, $primary-color-a 0%, $primary-color-b 100%);
+    margin: 0;
+    height: 100%;
+    min-height: 100vh;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.6rem;
+}
+img{
+    max-width: 100%;
+}
+h1,h2,h3,h4{
+    font-weight: 700;
+}
+.categories__title{
+    color: $secondary-color-b;
+    padding-left: 20px;
+    width: 100%;
+    font-weight: 400;
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+}

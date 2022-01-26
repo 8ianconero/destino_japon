@@ -1,0 +1,61 @@
+.header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    color: $secondary-color-a;
+    align-items: center;
+
+    & a{
+        margin-left: 20px;
+        width: 200px;
+    }
+
+    &-menu{
+        margin-right: 20px;
+
+        &__profile{
+            margin-right: 8px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            & i{
+                font-size: 3.5rem;
+                margin-right: 8px;
+            }
+
+            & p {
+                margin: 0;
+                font-family: 'Rubik', sans-serif;
+                font-weight: 700;
+                font-size: 1.8rem;
+            }
+
+            &:hover > div {
+                display: inline-block;
+            }
+        }
+
+        &__link{
+            display: none;
+            position: absolute;
+            width: 120px;
+            text-align: right;
+            margin: 10px 0 0 -140px;
+
+            & a{
+                top: 4rem;
+                display: block;
+                position: relative;
+                color: $secondary-color-b;
+                text-decoration: none;
+                padding-bottom: 1rem;
+                
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
