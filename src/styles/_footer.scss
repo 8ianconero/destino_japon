@@ -1,0 +1,23 @@
+.footer{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background-color: $primary-color-a;
+
+    @include breakpoint-down(small){
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: flex-start;
+    }
+
+    & a{
+        cursor: pointer;
+        color: $secondary-color-b;
+        padding-left: 30px;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}

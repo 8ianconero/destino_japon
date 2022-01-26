@@ -1,6 +1,28 @@
 /*!*****************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/styles.scss ***!
   \*****************************************************************************************************************/
+.animated {
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.pulse {
+  animation-name: pulse;
+  animation-duration: 2s;
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -219,4 +241,28 @@ h1, h2, h3, h4 {
 }
 .carousel::-webkit-scrollbar-track:hover, .carousel::-webkit-scrollbar-track:active {
   background: #FFF3FC;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  background-color: #cafffd;
+}
+@media (max-width: 39.9375em) {
+  .footer {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+.footer a {
+  cursor: pointer;
+  color: #39393A;
+  padding-left: 30px;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
 }
