@@ -1,28 +1,6 @@
 /*!*****************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/styles.scss ***!
   \*****************************************************************************************************************/
-.animated {
-  animation-duration: 5s;
-  animation-fill-mode: both;
-  animation-iteration-count: infinite;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-.pulse {
-  animation-name: pulse;
-  animation-duration: 2s;
-}
-
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -265,4 +243,110 @@ h1, h2, h3, h4 {
 }
 .footer a:hover {
   text-decoration: underline;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 30px;
+  min-height: calc(100vh - 160px);
+  font-size: 1.6rem;
+}
+.login__container {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 60px 30px 40px;
+  min-height: 700px;
+  width: 360px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+@media (max-width: 39.9375em) {
+  .login__container {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    box-shadow: none;
+    width: 100%;
+  }
+}
+.login__container h2 {
+  outline: none;
+}
+.login__form {
+  display: flex;
+  flex-direction: column;
+}
+.login__remember-me {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.login__remember-me a {
+  text-decoration: none;
+  color: #39393A;
+}
+.login__remember-me a:hover {
+  text-decoration: underline;
+}
+.login__social-media a {
+  color: #39393A;
+  text-decoration: none;
+}
+.login__social-media a:hover {
+  text-decoration: underline;
+}
+.login__social-media a > i {
+  width: 2.5rem;
+  margin-right: 10px;
+}
+.login__social-media > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.login__registro a {
+  font-size: 1.8rem;
+  color: #BA1200;
+  font-weight: 700;
+  text-decoration: none;
+}
+.login__registro a:hover {
+  text-decoration: underline;
+}
+.login__form--input {
+  background-color: transparent;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid #BA1200;
+  font-family: "Karla", sans-serif;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  outline: none;
+  height: 50px;
+}
+.login__form--input::placeholder {
+  color: #39393A;
+}
+
+.button {
+  background-color: rgba(57, 57, 58, 0.05);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "Rubik", sans-serif;
+  height: 50px;
+  letter-spacing: 1px;
+  margin: 10px 0;
 }

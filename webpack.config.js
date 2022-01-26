@@ -42,13 +42,26 @@ module.exports = {
   },
   plugins: [
       new HtmlWebpackPlugin({
-		//insercion de los elementos
-		inject: true,
-		//ubicacion de nuestro template
-		template: './public/index.html',
-		//resultado
-		filename: './index.html'
+        //insercion de los elementos
+        inject: true,
+        //ubicacion de nuestro template
+        template: './public/index.html',
+        //resultado
+        filename: './index.html'
 	    }),
+      new HtmlWebpackPlugin({
+        //insercion de los elementos
+        inject: true,
+        //ubicacion de nuestro template
+        template: './public/login.html',
+        //resultado
+        filename: './login.html'
+          }),
+      new HtmlWebpackPlugin({
+        inject: true,
+        template: './public/404.html',
+        filename: './404.html'
+          }),
         new MiniCssExtractPlugin(),
         new CopyPlugin({
             patterns: [
